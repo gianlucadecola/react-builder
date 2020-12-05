@@ -1,8 +1,4 @@
 FROM node:alpine
 
-WORKDIR /app
-
-COPY package.json /app
-
-RUN yarn install
-
+RUN yarn create react-app app
+WORKDIR app
